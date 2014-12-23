@@ -1,0 +1,24 @@
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 37px;
+}
+
+
+.two.columns img{
+    width: 80%;
+}
+
+
+
+#footer{
+    position: fixed;
+    bottom: 0;
+}
+
+
+.nascondi{display: none}
+.rosa{ color:#FE7778}
+.acqua{color: #39B6B1}
+.azzurro{color: #36A9E1}
+.rosa_shock{color: #E71D73}

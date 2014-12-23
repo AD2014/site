@@ -1,10 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Let Life</title>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Let.life</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
 </head>
-<body>
-  Coming soon
+<body style="background-color: #f4eddd">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+      <h4 style="text-indent: -99999px">Let.life</h4>
+    <div class="row">
+      <div class="one-half column" style="margin-top: 18%; display: none;">
+        <p>
+            <span id="uno">Quest'anno<br>vivrai ogni cosa</span>
+            <br>
+            <span id="due">e non sarai solo</span>
+            <br>
+            <span id="tre">avrai un amico</span>
+            <br>
+            <span id="quattro">che rivoluzionerà<br>il tuo mondo</span>
+            <br>
+            <span id="cinque">ormai<br>manca poco!</span>
+        </p>
+      </div>
+    </div>
+      
+    
+      <div class="row" style="position: fixed; bottom: 80px">
+          <div class="two columns" style="display:block !important">
+            <img src="images/letlife.png">
+          </div>
+      </div>
+      
+      <div id="footer">
+      
+      <div class="row" id="footer" style="font-family: 'Quicksand', sans-serif !important;">
+            <p class="two columns" style="font-size:15px; padding-top: 15px; font-family: 'Quicksand', sans-serif !important;" >COMING SOON</p>
+            <hr class="seven columns">
+          <div class="three columns" style="display: inline">
+              <p style="font-size: 10px; float: left; font-family: 'Quicksand', sans-serif !important; padding-top:20px">powered by</p>
+            <img src="images/ad.png" style="width: 15%;  padding-left: 5px; padding-top:8px">
+          </div>
+      </div>
+        
+    </div>
+  </div>
+    
+    
+    
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+    
+    
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://jqueryui.com/resources/download/jquery-ui-1.11.2.zip"></script>
+    
+    <script>
+    
+        Date.prototype.yyyymmdd = function() {
+          var dd  = this.getDate().toString();
+          var mm = (this.getMonth()+1).toString(); // getMonth() is zero-based
+          var yyyy = this.getFullYear().toString();
+          return yyyy  + (mm[1]?mm:"0"+mm[0]) + (dd[1]?dd:"0"+dd[0]); // padding
+        };
+
+        d = new Date();
+        var data_inject = d.yyyymmdd();
+        
+        if(data_inject < '20150101'){
+            $('#uno, #due, #tre, #quattro, #cinque').addClass('nascondi');
+    
+        };
+
+        if(data_inject >= '20150101' && data_inject < '20150113'){
+            $('#due, #tre, #quattro, #cinque').addClass('nascondi');
+ 
+        };
+
+        if(data_inject >= '20150113' && data_inject < '20150119'){
+            $('#tre, #quattro, #cinque').addClass('nascondi');
+            $('#due').addClass('rosa');
+        };
+
+        if(data_inject >= '20150119' && data_inject < '20150126'){
+            $('#quattro, #cinque').addClass('nascondi');
+            $('#tre').addClass('acqua');
+        };
+        
+        if(data_inject >= '20150126' && data_inject < '20150131'){
+            $('#cinque').addClass('nascondi');
+            $('#quattro').addClass('azzurro');
+        };
+
+        if(data_inject >= '20150131'){
+            $('#cinque').addClass('rosa_shock')
+        };
+
+
+    
+    </script>
 </body>
 </html>
