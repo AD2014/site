@@ -61,11 +61,11 @@
       
       <div class="row" id="footer" style="font-family: 'Quicksand', sans-serif !important;">
             <p class="two columns" style="font-size:15px; padding-top: 15px; font-family: 'Quicksand', sans-serif !important;" >COMING SOON</p>
-            <hr class="seven columns">
+           <!-- <hr class="seven columns">
           <div class="three columns" style="display: inline">
               <p style="font-size: 10px; float: left; font-family: 'Quicksand', sans-serif !important; padding-top:20px">powered by</p>
             <img src="images/ad.png" style="width: 15%;  padding-left: 5px; padding-top:8px">
-          </div>
+          </div>-->
       </div>
         
     </div>
@@ -83,6 +83,8 @@
     <script src="http://jqueryui.com/resources/download/jquery-ui-1.11.2.zip"></script>
     
     <script>
+        
+        
     
         Date.prototype.yyyymmdd = function() {
           var dd  = this.getDate().toString();
@@ -93,6 +95,9 @@
 
         d = new Date();
         var data_inject = d.yyyymmdd();
+        
+        
+        //forse è meglio un append xk sennò appare e si toglie
         
         if(data_inject < '20150101'){
             $('#uno, #due, #tre, #quattro, #cinque').addClass('nascondi');
