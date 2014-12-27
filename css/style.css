@@ -1,21 +1,74 @@
-p{
-    font-family: 'Montserrat', sans-serif;
+body{padding-left: 5%; padding-right: 5%; padding-top: 2%;font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 37px;
+    font-size: 37px;}
+
+
+@media (max-width: 550px) {
+    body{
+        padding-top: 0;
+    }
 }
 
 
-.two.columns img{
-    width: 80%;
+.row{
+    width: 100%;
 }
 
 
 
-#footer{
+#footer-wrapper{
+    width: 90%;
     position: fixed;
     bottom: 0;
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 300;
+    white-space: nowrap;
 }
 
+#footer div{
+    font-size: 10px;
+    width:
+}
+
+#powered p{
+    float: left;
+}
+
+.coming-soon{
+    font-size: 10px;
+}
+
+#letlife_logo{
+    width: 180px
+}
+
+#letlife_logo img{ width: 100%}
+
+#ad_logo{
+    width: 40px;
+}
+
+#ad_logo img{ width: 100%}
+
+
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
+}
+
+
+@media (max-width: 550px){
+    #powered{
+        text-align: center;
+        
+    }
+}
 
 .nascondi{display: none}
 .rosa{ color:#FE7778}
