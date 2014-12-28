@@ -37,15 +37,15 @@
     <div class="row">
       <div id="contenuto">
         <p>
-            <span id="uno">Quest'anno<br>vivrai ogni cosa</span>
+            <span id="uno nascondi">Quest'anno<br>vivrai ogni cosa</span>
             <br>
-            <span id="due">e non sarai solo</span>
+            <span id="due nascondi">e non sarai solo</span>
             <br>
-            <span id="tre">avrai un amico</span>
+            <span id="tre nascondi">avrai un amico</span>
             <br>
-            <span id="quattro">che rivoluzionerà<br>il tuo mondo</span>
+            <span id="quattro nascondi">che rivoluzionerà<br>il tuo mondo</span>
             <br>
-            <span id="cinque">ormai<br>manca poco!</span>
+            <span id="cinque nascondi">ormai<br>manca poco!</span>
         </p>
       </div>
     </div>
@@ -103,31 +103,32 @@
         //forse è meglio un append xk sennò appare e si toglie
         
         if(data_inject < '20150101'){
-            $('#uno, #due, #tre, #quattro, #cinque').addClass('nascondi');
+            
     
         };
 
         if(data_inject >= '20150101' && data_inject < '20150113'){
-            $('#due, #tre, #quattro, #cinque').addClass('nascondi');
+            $('#uno').removeClass('nascondi');
  
         };
 
         if(data_inject >= '20150113' && data_inject < '20150119'){
-            $('#tre, #quattro, #cinque').addClass('nascondi');
+            $('#uno, #due').removeClass('nascondi');
             $('#due').addClass('rosa');
         };
 
         if(data_inject >= '20150119' && data_inject < '20150126'){
-            $('#quattro, #cinque').addClass('nascondi');
+            $('#uno, #due, #tre').removeClass('nascondi');
             $('#tre').addClass('acqua');
         };
         
         if(data_inject >= '20150126' && data_inject < '20150131'){
-            $('#cinque').addClass('nascondi');
+            $('#uno, #due, #tre, #quattro').removeClass('nascondi');
             $('#quattro').addClass('azzurro');
         };
 
         if(data_inject >= '20150131'){
+            $('#uno, #due, #tre, #quattro, #cinque').removeClass('nascondi');
             $('#cinque').addClass('rosa_shock')
         };
 
