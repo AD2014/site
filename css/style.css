@@ -46,6 +46,7 @@ body{padding-left: 5%; padding-right: 5%; padding-top: 2%;font-family: 'Montserr
 
 #ad_logo{
     width: 40px;
+    height: 40px;
 }
 
 #ad_logo img{ width: 100%; position: relative; bottom: 5px; left: 5px}
@@ -106,35 +107,35 @@ hr.style-one {
 /* Larger than desktop */
 @media (min-width: 1000px) {
     hr.style-one{
-        width: %;
+        width: 80%;
     }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
     hr.style-one{
-        width: %;
+        width: 85%;
     }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1400px) {
     hr.style-one{
-        width: %;
+        width: 87%;
     }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1600px) {
     hr.style-one{
-        width: %;
+        width: 89%;
     }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1900px) {
     hr.style-one{
-        width: %;
+        width: 90%;
     }
 }
 
