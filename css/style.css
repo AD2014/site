@@ -1,5 +1,7 @@
 body{padding-left: 5%;
-    padding-right: 5%; padding-top: 2%;font-family: 'Montserrat', sans-serif;
+    padding-right: 5%; 
+    padding-top: 22%;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 37px;
     color: #173340;
@@ -152,7 +154,18 @@ hr.style-one {
 
 
 
-.nascondi{display: none}
+/* HEIGHT MEDIA QUERIES */
+
+@media (max-height: 768px) {
+    body{
+    font-size: 30px;
+        padding-top: 5%;
+    
+    }
+}
+
+
+.nascondi{display: -none}
 .rosa{ color:#FE7778}
 .acqua{color: #39B6B1}
 .azzurro{color: #36A9E1}
