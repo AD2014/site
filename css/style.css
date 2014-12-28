@@ -5,20 +5,23 @@ body{padding-left: 5%;
     font-weight: 700;
     font-size: 37px;
     color: #173340;
+    
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 
-@media (max-width: 550px) {
-    body{
-        padding-top: 0;
-    }
-}
 
 
 .row{
     width: 100%;
 }
 
+#contenuto{
+    padding-bottom: 150px;
+}
 
 
 #footer-wrapper{
@@ -44,7 +47,7 @@ body{padding-left: 5%;
 }
 
 #letlife_logo{
-    width: 150px
+    width: 120px
 }
 
 #letlife_logo img{
@@ -71,6 +74,8 @@ hr.style-one {
     border: 0;
     height: 1px;
     background: #173340;
+    position: relative;
+    bottom: 0;
 }
 
 
@@ -84,6 +89,11 @@ hr.style-one {
         width: 100px;
     }
     
+    #ad_logo{
+        width: 25px;
+        height: 25px;
+    }
+    
     
     #powered{
         position: fixed;
@@ -91,7 +101,13 @@ hr.style-one {
         right: 15%;
     }
     
+    #powered p{
+        position: relative;
+        bottom: 5px;
+    }
+    
     hr.style-one {
+        /*display: none;*/
         border: 0;
         height: 1px;
         background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
@@ -105,8 +121,6 @@ hr.style-one {
 
 @media (min-width: 550px){
     
-    
-    
     .coming-soon{
         float:left;
     }
@@ -117,6 +131,8 @@ hr.style-one {
         margin-left: 10px;
         margin-right: 10px;
     }
+    
+    
 }
 
 /*-------------------------------- hr width media queries       */
