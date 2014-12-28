@@ -1,6 +1,6 @@
 body{padding-left: 5%;
     padding-right: 5%; 
-    padding-top: 22%;
+    padding-top: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 37px;
@@ -75,9 +75,19 @@ hr.style-one {
 
 
 @media (max-width: 550px){
+    
+    body{
+        padding-top: 0 !important;
+    }
+    
+    #letlife_logo{
+        width: 100px;
+    }
+    
+    
     #powered{
         position: fixed;
-        bottom: 22px;
+        bottom: 13px;
         right: 15%;
     }
     
@@ -88,11 +98,14 @@ hr.style-one {
         background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
         background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
         background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
+        
     }
 
 }
 
 @media (min-width: 550px){
+    
+    
     .coming-soon{
         float:left;
     }
@@ -102,8 +115,6 @@ hr.style-one {
         width: 60%;
         margin-left: 10px;
         margin-right: 10px;
-        position: relative;
-        bottom: 4px
     }
 }
 
@@ -155,6 +166,14 @@ hr.style-one {
 
 
 /* HEIGHT MEDIA QUERIES */
+
+@media (max-height: 600px) {
+    body{
+        font-size: 20px;
+        padding-top: 1%;
+    
+    }
+}
 
 @media (max-height: 768px) {
     body{

@@ -33,7 +33,7 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-      <h4 style="text-indent: -99999px; margin: 0;">Let.life</h4>
+      <h4 style="text-indent: -99999px; margin: 0; height: 20px;">Let.life</h4>
     <div class="row">
       <div id="contenuto">
         <p>
@@ -53,7 +53,7 @@
     
       
       
-      <div id="footer-wrapper">
+      <div id="footer-wrapper" class="nascondi">
           
           <div class="row" >
           <div id="letlife_logo">
@@ -87,6 +87,11 @@
     
     <script>
         
+        $(function() {
+            $('#footer-wrapper').fadeIn(500, function(){
+                
+            });
+        });
         
     
         Date.prototype.yyyymmdd = function() {
@@ -108,27 +113,51 @@
         };
 
         if(data_inject >= '20150101' && data_inject < '20150113'){
-            $('#uno').removeClass('nascondi');
+            $('#uno').fadeIn(1000);
  
         };
 
         if(data_inject >= '20150113' && data_inject < '20150119'){
-            $('#uno, #due').removeClass('nascondi');
+            $('#uno').fadeIn(1000, function(){
+                $('#due').fadeIn(1000)
+            });
+            
             $('#due').addClass('rosa');
         };
 
         if(data_inject >= '20150119' && data_inject < '20150126'){
-            $('#uno, #due, #tre').removeClass('nascondi');
+            $('#uno').fadeIn(1000, function(){
+                $('#due').fadeIn(1000, function(){
+                    $('#tre').fadeIn(1000)
+                });
+            });
+            
             $('#tre').addClass('acqua');
         };
         
         if(data_inject >= '20150126' && data_inject < '20150131'){
-            $('#uno, #due, #tre, #quattro').removeClass('nascondi');
+            $('#uno').fadeIn(1000, function(){
+                $('#due').fadeIn(1000, function(){
+                    $('#tre').fadeIn(1000, function(){
+                        $('#quattro').fadeIn(1000)
+                    });
+                });
+            });
+            
             $('#quattro').addClass('azzurro');
         };
 
-        if(data_inject >= '20150131'){
-            $('#uno, #due, #tre, #quattro, #cinque').removeClass('nascondi');
+        if(data_inject >= '20140131'){
+            $('#uno').fadeIn(1000, function(){
+                $('#due').fadeIn(1000, function(){
+                    $('#tre').fadeIn(1000, function(){
+                        $('#quattro').fadeIn(1000, function(){
+                            $('#cinque').fadeIn(1000);
+                        });
+                    });
+                });
+            });
+            
             $('#cinque').addClass('rosa_shock')
         };
         
