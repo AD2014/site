@@ -1,6 +1,9 @@
-body{padding-left: 5%; padding-right: 5%; padding-top: 2%;font-family: 'Montserrat', sans-serif;
+body{padding-left: 5%;
+    padding-right: 5%; padding-top: 2%;font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 37px;}
+    font-size: 37px;
+    color: #173340;
+}
 
 
 @media (max-width: 550px) {
@@ -51,6 +54,11 @@ body{padding-left: 5%; padding-right: 5%; padding-top: 2%;font-family: 'Montserr
     width: 40px;
     height: 40px;
     position: relative; bottom: 5px; left: 5px;
+    cursor: pointer;
+}
+
+#ad_logo:hover{
+    opacity: 0.8;
 }
 
 #ad_logo img{ width: 100%;}
@@ -60,7 +68,7 @@ body{padding-left: 5%; padding-right: 5%; padding-top: 2%;font-family: 'Montserr
 hr.style-one {
     border: 0;
     height: 1px;
-    background: #333;
+    background: #173340;
 }
 
 
@@ -74,7 +82,6 @@ hr.style-one {
     hr.style-one {
         border: 0;
         height: 1px;
-        background: #333;
         background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
         background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
         background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
