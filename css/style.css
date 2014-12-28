@@ -27,7 +27,7 @@ body{padding-left: 5%; padding-right: 5%; padding-top: 2%;font-family: 'Montserr
 
 #footer div{
     font-size: 10px;
-    width:
+    
 }
 
 #powered p{
@@ -39,7 +39,7 @@ body{padding-left: 5%; padding-right: 5%; padding-top: 2%;font-family: 'Montserr
 }
 
 #letlife_logo{
-    width: 180px
+    width: 150px
 }
 
 #letlife_logo img{ width: 100%}
@@ -48,7 +48,7 @@ body{padding-left: 5%; padding-right: 5%; padding-top: 2%;font-family: 'Montserr
     width: 40px;
 }
 
-#ad_logo img{ width: 100%}
+#ad_logo img{ width: 100%; position: relative; bottom: 5px; left: 5px}
 
 
 
@@ -56,19 +56,89 @@ hr.style-one {
     border: 0;
     height: 1px;
     background: #333;
-    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
-    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
-    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
-    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
 }
 
 
 @media (max-width: 550px){
     #powered{
-        text-align: center;
-        
+        position: fixed;
+        bottom: 22px;
+        right: 15%;
+    }
+    
+    hr.style-one {
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+        background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
+        background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
+        background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
+    }
+
+}
+
+@media (min-width: 550px){
+    .coming-soon{
+        float:left;
+    }
+    
+    hr.style-one{
+        float: left;
+        width: 60%;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+        bottom: 4px
     }
 }
+
+/*-------------------------------- hr width media queries       */
+
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    hr.style-one{
+        width: 70%;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    hr.style-one{
+        width: %;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    hr.style-one{
+        width: %;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1400px) {
+    hr.style-one{
+        width: %;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1600px) {
+    hr.style-one{
+        width: %;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1900px) {
+    hr.style-one{
+        width: %;
+    }
+}
+
+
 
 .nascondi{display: none}
 .rosa{ color:#FE7778}
