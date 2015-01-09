@@ -47,7 +47,7 @@ body{
 
 
 #letlife_logo{
-    width: 120px
+    width: 80px
 }
 
 #letlife_logo img{
@@ -198,7 +198,7 @@ hr.style-one {
     }
     
     .letlife_logo{
-        width: 80px;
+        width: 80px !important;
     }
 }
 
