@@ -1,19 +1,16 @@
-body{padding-left: 5%;
+body{
+    padding-left: 5%;
     padding-right: 5%; 
     padding-top: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 37px;
     color: #173340;
-    
 }
 
 ::-webkit-scrollbar { 
     display: none; 
 }
-
-
-
 
 .row{
     width: 100%;
@@ -35,11 +32,19 @@ body{padding-left: 5%;
 
 #footer div{
     font-size: 10px;
-    
+    display: inline-block;
 }
 
 #powered p{
-    float: left;
+    
+}
+
+#powered div {
+    width:40px;
+    
+}
+#powered div img{
+    width: 100%;
 }
 
 .coming-soon{
@@ -55,18 +60,15 @@ body{padding-left: 5%;
 }
 
 #ad_logo{
-    clear: right;
     width: 40px;
-    height: 40px;
-    position: relative; bottom: 5px; left: 5px;
-    cursor: pointer;
+    
 }
 
 #ad_logo:hover{
     opacity: 0.8;
 }
 
-#ad_logo img{ width: 100%;}
+
 
 
 
@@ -89,21 +91,14 @@ hr.style-one {
         width: 100px;
     }
     
-    #ad_logo{
-        width: 25px;
-        height: 25px;
-    }
+
     
     
     #powered{
-        position: fixed;
-        bottom: 13px;
-        right: 15%;
+        
     }
     
     #powered p{
-        position: relative;
-        bottom: 5px;
     }
     
     hr.style-one {
@@ -121,12 +116,10 @@ hr.style-one {
 
 @media (min-width: 550px){
     
-    .coming-soon{
-        float:left;
-    }
+
     
     hr.style-one{
-        float: left;
+        
         width: 60%;
         margin-left: 10px;
         margin-right: 10px;

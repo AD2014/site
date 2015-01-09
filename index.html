@@ -55,7 +55,7 @@
         <p>
             <span id="uno" class="nascondi">Quest'anno<br>vivrai ogni cosa</span>
             <br>
-            <span id="due" class="nascondi">e non sarai solo</span>
+            <span id="due" class="nascondi">e non sarai solo<span id="duepunti" class="nascondi">:</span></span>
             <br>
             <span id="tre" class="nascondi">avrai un amico</span>
             <br>
@@ -72,23 +72,34 @@
       <div id="footer-wrapper" class="nascondi">
           
           <div class="row" >
-          <div id="letlife_logo">
-            <img src="images/letlife.png">
-          </div>
-      </div>
-      
-      <div id="footer" >
-            <p class="coming-soon">COMING SOON</p>
-           <hr class="style-one">
-          <div id="powered">
-              <p>powered by</p>
-              <div id="ad_logo">
-                <img src="images/ad.png">
+              <div id="letlife_logo">
+                <img src="images/letlife.png">
               </div>
           </div>
-      </div>
+      
+          <div id="footer" >
+
+                <p class="coming-soon">COMING SOON</p>
+
+                <hr class="style-one">
+
+                <div id="powered">
+                      <div>powered by</div>
+                      <div>
+                        <img src="images/ad.png">
+                      </div>
+                </div>
+
+             <!-- 
+              <div>COMING SOON</div>
+              <div><hr class="style-one"></div>
+              <div>powered by</div>
+              <div style="width: 40px"><img src="images/ad.png" style="width: 100%"></div>
+              -->
+          </div>
         
     </div>
+      
   </div>
     
     
@@ -143,7 +154,7 @@
 
         if(data_inject >= '20150119' && data_inject < '20150126'){
             $('#uno').fadeIn(1000, function(){
-                $('#due').fadeIn(1000, function(){
+                $('#due, #duepunti').fadeIn(1000, function(){
                     $('#tre').fadeIn(1000)
                 });
             });
@@ -153,7 +164,7 @@
         
         if(data_inject >= '20150126' && data_inject < '20150131'){
             $('#uno').fadeIn(1000, function(){
-                $('#due').fadeIn(1000, function(){
+                $('#due, #duepunti').fadeIn(1000, function(){
                     $('#tre').fadeIn(1000, function(){
                         $('#quattro').fadeIn(1000)
                     });
@@ -165,7 +176,7 @@
 
         if(data_inject >= '20150131'){
             $('#uno').fadeIn(1000, function(){
-                $('#due').fadeIn(1000, function(){
+                $('#due, #duepunti').fadeIn(1000, function(){
                     $('#tre').fadeIn(1000, function(){
                         $('#quattro').fadeIn(1000, function(){
                             $('#cinque').fadeIn(1000);
