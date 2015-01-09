@@ -196,6 +196,10 @@ hr.style-one {
         padding-top: 1%;
     
     }
+    
+    .letlife_logo{
+        width: 80px;
+    }
 }
 
 @media (min-height: 768px) {
