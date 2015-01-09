@@ -35,21 +35,16 @@ body{
     display: inline-block;
 }
 
-#powered p{
-    
+.coming-soon{
+    font-size: 10px;
 }
 
-#powered div {
-    width:40px;
-    
-}
+
+
 #powered div img{
     width: 100%;
 }
 
-.coming-soon{
-    font-size: 10px;
-}
 
 #letlife_logo{
     width: 120px
@@ -66,6 +61,7 @@ body{
 
 #ad_logo:hover{
     opacity: 0.8;
+    cursor: pointer;
 }
 
 
@@ -95,11 +91,20 @@ hr.style-one {
     
     
     #powered{
-        
+        position: fixed;
+        bottom: 13px;
+        right: 5%;
     }
     
-    #powered p{
+    #ad_logo{
+        width: 30px
     }
+    
+    #powered div:first-child{
+        position: relative;
+        bottom: 10px;
+    }
+    
     
     hr.style-one {
         /*display: none;*/
@@ -116,6 +121,10 @@ hr.style-one {
 
 @media (min-width: 550px){
     
+    #footer *{
+        display: inline-block;
+        vertical-align: middle
+    }
 
     
     hr.style-one{
@@ -145,21 +154,21 @@ hr.style-one {
 /* Larger than desktop */
 @media (min-width: 1000px) {
     hr.style-one{
-        width: 80%;
+        width: 77%;
     }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
     hr.style-one{
-        width: 85%;
+        width: 83%;
     }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1400px) {
     hr.style-one{
-        width: 87%;
+        width: 85%;
     }
 }
 
@@ -181,7 +190,7 @@ hr.style-one {
 
 /* HEIGHT MEDIA QUERIES */
 
-@media (max-height: 600px) {
+@media (max-height: 768px) {
     body{
         font-size: 20px;
         padding-top: 1%;
@@ -189,11 +198,15 @@ hr.style-one {
     }
 }
 
-@media (max-height: 768px) {
+@media (min-height: 768px) {
     body{
     font-size: 30px;
         padding-top: 5%;
     
+    }
+    
+    #powered{
+        bottom: 20px;    
     }
 }
 
