@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Let.life - Coming soon</title>
+
+    <meta name="description" content="Coming soon. Dai vita ai tuoi oggetti più cari. Scopri come.">
+    <meta name="keywords" content="letlife let.life ad2014">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--<link rel="stylesheet" href="css/skeleton.css">-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+
+
+
+    <!--   Analytics  -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-52710742-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</head>
+
+    <div id="particles-js"></div>
+    
+<body style="background-color: #f4eddd">
+
+
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <p class="nascondi">Coming soon. Dai vita ai tuoi oggetti più cari. Scopri come. .</p>
+
+
+    <div class="container">
+        <h4 style="text-indent: -99999px; margin: 0; height: 20px;">Let.life</h4>
+        <div class="row nascondi">
+            <div id="contenuto">
+                <p>
+                    <span>We were tired of wasting <span class="rosa">time</span>,</span>
+                    <br>
+                    <span>We were tired of losing <span class="azzurro">things</span>,</span>
+                    <br>
+                    <span>We were worried about losing <span class="acqua">memories</span>.</span>
+                    <br><br>
+                    <span>We found a <span class="rosa_shock">friend</span> who protects us from this,<br>
+soon you will know.</span>
+                    <br>
+                    <br>
+                    <span id="hashtag"><a href="https://twitter.com/hashtag/followthechange?src=hash" target="_blank">#followthechange</a></span>
+                </p>
+            </div>
+        </div>
+
+        
+
+
+
+
+        <div id="footer-wrapper" class="nascondi">
+
+            <div class="row">
+                <div id="letlife_logo">
+                    <img src="images/letlife.png">
+                </div>
+            </div>
+
+            <div id="footer">
+
+                <div class="coming-soon">COMING SOON</div>
+
+                <hr class="style-one">
+
+                <div id="powered">
+                    <div>powered by</div>
+                    <div id="ad_logo">
+                        <img src="images/logoAnimaDigitale.png">
+                    </div>
+                </div>
+
+                <!-- 
+              <div>COMING SOON</div>
+              <div><hr class="style-one"></div>
+              <div>powered by</div>
+              <div style="width: 40px"><img src="images/ad.png" style="width: 100%"></div>
+              -->
+            </div>
+
+        </div>
+
+
+        <div class="social">
+            
+            <div id="lang">
+                <img src="images/ita.png">
+            </div>
+
+            <div id="facebook">
+                <img src="images/facebook.png">
+            </div>
+
+            <div id="twitter">
+                <img src="images/twitter.png">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/jquery.flipping_text.min.js"></script>
+
+    <script>
+        $(function () {
+
+            $('.row').fadeIn(1500, function () {
+                $('#footer-wrapper').fadeIn(500, function () {
+                    
+                });
+            });
+
+            $("#hashtag a").flipping_text({
+                tickerTime: 30, // Define a time between each ticket in milliseconds. The default value is 10.
+                customRandomChar: false, // You can use your own random strings by defining them here. The default value is false which will use my random string: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+                tickerCount: 10, // Set the number of characters randomly shown before the real text is shown here. The default value is 10.
+                opacityEffect: true, // You can toggle the opacity effect here. Set this to false if you don't want the random text to fade in. The default value is 10.
+                resetOnChange: false // Toggle this to true if you want the plugin to stop and fill in all the text immediately when the user changes browser's tab. The default value is false.
+            });
+
+
+        });
+
+
+
+
+
+
+        $('#ad_logo').on('click', function () {
+            window.open("http://www.ad2014.it");
+        });
+
+        $('#twitter').on('click', function () {
+            window.open("https://twitter.com/letlifeofficial");
+        });
+
+        $('#facebook').on('click', function () {
+            window.open("https://www.facebook.com/letlifeofficial");
+        });
+        
+        $('#lang').on('click', function () {
+            window.location="http://let.life";
+        });
+
+
+
+
+
+
+        /* particlesJS('dom-id', params);
+        /* @dom-id : set the html tag id [string, optional, default value : particles-js]
+        /* @params: set the params [object, optional, default values : check particles.js] */
+
+        /* config dom id (optional) + config particles params */
+
+        width = $(document).width();
+        
+        if (width > 640) {
+            num_nb = Math.round(Math.sqrt(width * 15));
+            num_size = 5;
+            enable_auto = true;
+        } else {
+            num_nb = Math.round(Math.sqrt(width/3));
+            num_size = 8;
+            enable_auto = false;
+        }
+        console.log(num_nb)
+
+         particlesJS('particles-js', {
+            particles: {
+                color: '#008391',
+                shape: 'circle', // "circle", "edge" or "triangle"
+                opacity: .6,
+                size: num_size,
+                size_random: true,
+                nb: num_nb,
+                line_linked: {
+                    enable_auto: enable_auto,
+                    distance: 100,
+                    color: '#008391',
+                    opacity: .9,
+                    width: 1,
+                    condensed_mode: {
+                        enable: true,
+                        rotateX: 600,
+                        rotateY: 600
+                    }
+                },
+                anim: {
+                    enable: true,
+                    speed: 2
+                }
+            },
+            interactivity: {
+                enable: true,
+                mouse: {
+                    distance: 250
+                },
+                detect_on: 'canvas', // "canvas" or "window"
+                mode: 'grab',
+                line_linked: {
+                    opacity: .5
+                },
+                events: {
+                    onclick: {
+                        enable: false,
+                        mode: 'push', // "push" or "remove" (particles)
+                        nb: 4
+                    }
+                }
+            },
+            /* Retina Display Support */
+            retina_detect: true
+        });
+
+
+
+
+//        $(window).resize(function () {
+//            location.reload();
+//        });
+    </script>
+
+
+
+</body>
+
+</html>
