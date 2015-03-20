@@ -1130,3 +1130,18 @@ i{
 -moz-box-shadow: 2px 2px 10px -2px rgba(92,92,92,1);
 box-shadow: 2px 2px 10px -2px rgba(92,92,92,1);
 }
+
+
+
+
+
+/****************************/
+
+#medium{
+  padding: 0 !important;
+}
+
+#medium iframe{
+  width: 100%;
+  margin-bottom: 30px;
+}
