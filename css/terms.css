@@ -246,10 +246,10 @@ nav a:hover {
 
     .main article {
         float: left;
-        
+
     }
 
-    
+
 }
 
 @media only screen and (min-width: 1140px) {
@@ -391,4 +391,11 @@ nav a:hover {
     h3 {
         page-break-after: avoid;
     }
+}
+
+
+@media screen (max-width: 1000px){
+  p{
+    font-size: .8em;
+  }
 }
