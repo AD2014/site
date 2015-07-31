@@ -67,7 +67,7 @@
       &>div
         width 140px
         margin 0 auto
-        box-shadow: 2px 2px 1px 1px #5D8586;
+        box-shadow: 2px 2px 1px 1px rgba(0,0,0,.5);
         &>div
           display inline-block
           width 70px
@@ -169,14 +169,14 @@
 
 #section-3
 
-  background url(../images/sfondo_05.png) no-repeat 0 0
+  background url(../images/sfondo_03.png) no-repeat 0 0
   background-size cover
 
   text-align center
   padding-top 55px
-  color #3A8D8D
+  color whitesmoke
   p
-    color #3A8D8D
+    color whitesmoke
 
 
 ///////////////
@@ -196,7 +196,7 @@
 ///////
 
 #section-5
-  background url(../images/sfondo_03.png) no-repeat 0 0
+  background url(../images/sfondo_05.png) no-repeat 0 0
   background-size cover
 
 
@@ -204,8 +204,9 @@
   padding-top 55px
   p
     padding 0 30px 55px
+    color #3A8D8D
   .gradient-title
-    color whitesmoke
+    color #3A8D8D
 
 ////////
 
@@ -246,7 +247,7 @@
     transition all 1s ease
     text-decoration none
   .btn:hover
-    background-color whitesmoke
+    background-color grey
     transition all 1s ease
 
   #article-1
@@ -256,8 +257,8 @@
     z-index 10
     box-shadow 0px 4px 8px 2px rgba(0,0,0,.4)
     .btn
-      color blue
-      border 1px solid blue
+      color white
+      border 1px solid white
   #article-2
     background url(../images/case_02.png) no-repeat 0 0
     background-size cover
@@ -265,8 +266,8 @@
     z-index 9
     box-shadow 0px 4px 8px 2px rgba(0,0,0,.4)
     .btn
-      color darkblue
-      border 1px solid darkblue
+      color white
+      border 1px solid white
   #article-3
     background url(../images/case_03.png) no-repeat 0 0
     background-size cover
@@ -275,6 +276,8 @@
     .btn
       color grey
       border 1px solid grey
+      &:hover
+        background-color white
 
 
 
@@ -478,7 +481,7 @@
 
 
   #section-3
-    background url(../images/w_sfondo_05.png) no-repeat 0 0
+    background url(../images/w_sfondo_03.png) no-repeat 0 0
     background-size cover
 
 
@@ -488,7 +491,7 @@
 
 
   #section-5
-    background url(../images/w_sfondo_03.png) no-repeat 0 0
+    background url(../images/w_sfondo_05.png) no-repeat 0 0
     background-size cover
 
 
@@ -640,10 +643,13 @@
     position: absolute;
     top: 0;
     overflow: hidden;
+
   }
 
   .layer {
     position: absolute;
+    opacity: .5;
+
   }
   .layer div {
     -webkit-transform: translate3d(0,0,0);
@@ -692,13 +698,15 @@
     p
       text-align justify
     .p-first
-      font-size 34px
+      font-size 40px
+      font-weight bold
       text-transform uppercase
       text-align right
     .p-second
       visibility hidden
     .p-third
-      font-size 34px
+      font-size 40px
+      font-weight bold
       text-transform uppercase
       text-align left
 
@@ -736,8 +744,10 @@
       display block
       padding-top 60px
       margin 0 auto
+    .white-txt
+      font-size 20px
     .blue-txt
-      font-size .7em
+      font-size .99em
       font-weight bold
       text-align center !important
     div
@@ -765,13 +775,14 @@
 
 
   .left-column
-    top 22%
+    top 30%
   .right-column
     top 30%
     position relative
     left -35px
     p
       text-align center !important
+      font-size 20px
 
 
 
@@ -788,13 +799,13 @@
       position relative
       .device-img
         position absolute
+        width 300px
       .device-video
-        top: 105px;
+        top: 109px;
         left: 49px;
         position: relative;
         width: 203px;
         height: 360px;
-        background-color: #35CDCB;
         .video-device
           position absolute
         #v1
@@ -830,12 +841,25 @@
       padding-top 45px
 
 
-/******** VIDEO *******/
 
 
 
 
-/////////////// > 1300
+  #section-4
+    p
+      padding-top: 50px;
+
+  #section-5
+    p
+      padding-top: 50px;
+
+
+
+
+
+
+
+
 
 +above(1350px)
   #perche
