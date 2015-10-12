@@ -325,9 +325,6 @@ body {
   text-align: center;
   padding: 55px 0;
 }
-#section-7-5 .download {
-  position: initial;
-}
 #section-7-5 .col-wp {
   text-align: justify;
   padding: 20px;
@@ -765,7 +762,8 @@ body {
   #section-3 .download,
   #section-4 .download,
   #section-5 .download,
-  #section-6 .download {
+  #section-6 .download,
+  #section-7-5 .download {
     display: none;
   }
   .article-question {
@@ -1047,6 +1045,11 @@ body {
   #section-7-5 h2 {
     margin-bottom: 40px;
     font-size: 2em;
+  }
+  #section-7-5 .download h2 {
+    font-size: 0.9em;
+    margin-bottom: 0;
+    color: #fff;
   }
   #section-7-5 .col-wp {
     max-width: 1024px;
