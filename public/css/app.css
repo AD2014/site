@@ -1136,6 +1136,52 @@ body {
     font-size: 20px;
   }
 }
+/*************/
+#thanks {
+  *zoom: 1;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+  height: 100vh;
+  background-color: #00ccd5;
+  color: #fff;
+  text-align: center;
+  padding-top: 20%;
+}
+#thanks:before {
+  content: '';
+  display: table;
+}
+#thanks:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#thanks #thanks-inner {
+  width: 100%;
+}
+#thanks #thanks-inner img {
+  max-width: 150px;
+}
+#thanks #thanks-inner h1 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+#thanks #thanks-inner p {
+  padding: 30px 0;
+}
+#thanks #thanks-inner img {
+  padding: 0 20px;
+}
+#thanks #thanks-inner a img {
+  max-height: 50px;
+}
+#thanks #thanks-inner a:hover {
+  opacity: 0.8;
+}
 
 
 /*# sourceMappingURL=app.css.map*/

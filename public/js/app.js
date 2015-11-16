@@ -14466,6 +14466,8 @@ b){a.originalEvent.touches.length&&(A=a.originalEvent.touches[0].pageY)});b.bind
 
 ;
 ;
+;
+;
 var fullPageExist;
 
 function setFullpage(overflow){
@@ -14641,6 +14643,15 @@ $(document).ready(function() {
         url: 'http://life.us10.list-manage.com/subscribe/post?u=b4b4b2998e0738bb9096c0e4c&amp;id=2fd3acd1f1',
         callback: callbackFunction
     });
+
+
+
+    $('.ios').click(function(){
+      location.assign("/ios_download.html");
+    })
+    $('.android').click(function(){
+      location.assign("/android_download.html");
+    })
 
     (function (i, s, o, g, r, a, m) {
               i['GoogleAnalyticsObject'] = r;
