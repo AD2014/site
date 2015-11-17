@@ -13,6 +13,7 @@ function setFullpage(overflow){
        responsiveWidth: 768,
        responsiveHeight: 0,
        showActiveTooltip: true,
+       scrollingSpeed: 800,
        navigation: true,
        navigationPosition: 'right',
        scrollOverflow: overflow,
@@ -160,6 +161,9 @@ function callbackFunction (resp) {
 
 $(document).ready(function() {
 
+
+    $(window).lazyLoadXT();
+
     $('#aprimodal').click(function(){
       $('#vm').get(0).play();
     });
@@ -182,7 +186,7 @@ $(document).ready(function() {
     })
     $('.android').click(function(){
       location.assign("/android_download.html");
-    })
+    });
 
     (function (i, s, o, g, r, a, m) {
               i['GoogleAnalyticsObject'] = r;

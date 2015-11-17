@@ -21,6 +21,8 @@ html.no-js(lang="en")
 			link(href="css/vendor.css", rel="stylesheet")
 			link(href="css/app.css", rel="stylesheet")
 			
+
+			
 	
 	body
 		
@@ -57,7 +59,7 @@ html.no-js(lang="en")
 			
 			
 		block scripts
-			script(src="../js/app.js") 
+			script(src="../js/app.js", async ) 
 			
 			script(type='text/javascript').
 				/* <![CDATA[ */
@@ -65,7 +67,7 @@ html.no-js(lang="en")
 				var google_custom_params = window.google_tag_params;
 				var google_remarketing_only = true;
 				/* ]]> */
-			script(type='text/javascript', src='//www.googleadservices.com/pagead/conversion.js')
+			script(type='text/javascript', src='//www.googleadservices.com/pagead/conversion.js', async )
 			noscript
 				div(style='display:inline;')
 					img(height='1', width='1', style='border-style:none;', alt='', src='//googleads.g.doubleclick.net/pagead/viewthroughconversion/956609656/?value=0&guid=ON&script=0')

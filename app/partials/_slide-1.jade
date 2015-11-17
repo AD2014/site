@@ -11,20 +11,20 @@
   
   ul.scene
     li.layer(data-depth='0.10')
-      img(src='images/parallax-01.png')
+      img(data-src='images/parallax-01.png')
     li.layer(data-depth='0.40')
-      img(src='images/parallax-02.png')
+      img(data-src='images/parallax-02.png')
     li.layer(data-depth='0.90')
-      img(src='images/parallax-03.png')
+      img(data-src='images/parallax-03.png')
 
   div.bg-png#png-01
-    img(src="images/w_oggetti_01.png")
+    img(data-src="images/w_oggetti_01.png")
   div.bg-png#png-02
-    img(src="images/w_oggetti_02.png")
+    img(data-src="images/w_oggetti_02.png")
   div.bg-png#png-03
-    img(src="images/w_oggetti_03.png")
+    img(data-src="images/w_oggetti_03.png")
   div.bg-png#png-04
-    img(src="images/w_oggetti_04.png")
+    img(data-src="images/w_oggetti_04.png")
 
   .mobile-main
     h1
@@ -65,5 +65,5 @@
   #videomodal
     a#closemodal(href="#", rel="modal:close")
     video#vm(poster='video/splash_fallback.png', width='100%', loop="true")
-      source(src='video/m.mp4', type='video/mp4', id="mobile-source")
+      source(data-src='video/m.mp4', type='video/mp4', id="mobile-source")
       img(src='video/splash_fallback.png', style='width:100%')     
