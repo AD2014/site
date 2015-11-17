@@ -67,6 +67,12 @@ function setFullpage(overflow){
   });
   fullPageExist = true;
 
+  $('.letlife-logo-fix').click(function(e){
+    e.preventDefault();
+    console.log('scroll')
+    $.fn.fullpage.moveTo(1);
+  })
+
   $('#backtotop').click(function(e){
     e.preventDefault();
     console.log('scroll')

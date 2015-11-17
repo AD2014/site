@@ -15189,6 +15189,12 @@ function setFullpage(overflow){
   });
   fullPageExist = true;
 
+  $('.letlife-logo-fix').click(function(e){
+    e.preventDefault();
+    console.log('scroll')
+    $.fn.fullpage.moveTo(1);
+  })
+
   $('#backtotop').click(function(e){
     e.preventDefault();
     console.log('scroll')
@@ -15303,12 +15309,12 @@ $(document).ready(function() {
 
 
 
-    $('.ios').click(function(){
-      location.assign("/ios_download.html");
-    })
-    $('.android').click(function(){
-      location.assign("/android_download.html");
-    });
+    // $('.ios').click(function(){
+    //   location.assign("/ios_download.html");
+    // })
+    // $('.android').click(function(){
+    //   location.assign("/android_download.html");
+    // });
 
     (function (i, s, o, g, r, a, m) {
               i['GoogleAnalyticsObject'] = r;
