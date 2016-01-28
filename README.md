@@ -5,7 +5,7 @@
 In order to see the html result write down those commands on the shell
 
 ```bash
-npm install -g brunch
+npm install -g brunch@1
 npm install -g bower
 npm install
 bower install
