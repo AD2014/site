@@ -538,7 +538,7 @@
         
 			$.ajax({
 				type: "POST",
-				url: 'http://54.77.137.107:9200/v1/ask/letlife',
+				url: 'https://api.let.life/v1/ask/letlife',
 				dataType: 'json',
 				async: false,
 				headers: {
