@@ -499,6 +499,8 @@
     submitContact.on('click', function(e){
         e.preventDefault();
 
+		var lang = $('input#lang').val(); 
+
 		var nome = $('input#name').val();
 		var azienda = $('input#azienda').val();
 		var email = $('input#mail').val();
@@ -534,11 +536,17 @@
 				bodyMsg += "<br>messaggio: "+messaggio;
 			}
 
+			var strResponse = "Messaggio inviato";
+			if(lang=='eng') {
+				strResponse = "Message send";
+			} 
+
 			var $this = $(this);
         
 			$.ajax({
 				type: "POST",
 				url: 'https://api.let.life/v1/ask/letlife',
+				//url: 'http://54.77.137.107:9200/v1/ask/letlife',  
 				dataType: 'json',
 				async: false,
 				headers: {
@@ -549,7 +557,7 @@
 
 					if(data.message == 'mail sent'){
 						$this.parents('form').find('input[type=text],input[type=email],textarea,select').filter(':visible').val('');
-						message.hide().removeClass('success').removeClass('error').addClass('success').html('Messaggio inviato').fadeIn('slow').delay(5000).fadeOut('slow');
+						message.hide().removeClass('success').removeClass('error').addClass('success').html(strResponse).fadeIn('slow').delay(5000).fadeOut('slow');
 					} else {
 						message.hide().removeClass('success').removeClass('error').addClass('error').html(data.message).fadeIn('slow').delay(5000).fadeOut('slow');
 					}
