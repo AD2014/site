@@ -283,7 +283,7 @@
   
   
     .heading-frame h3 {
-	 font-size:18px;
+	 font-size:17px;
    
   }
 
@@ -496,6 +496,9 @@
 
 
 @media (max-width: 380px) {
+	
+	
+
 	
 	.menu-footer{
 	 text-align:center;
